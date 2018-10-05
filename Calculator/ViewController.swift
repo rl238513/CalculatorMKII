@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-         self.divisionButton.image = UIImage(named: "\")
+   
     }
 
     @IBAction func divisionButton(_ sender: Any) {

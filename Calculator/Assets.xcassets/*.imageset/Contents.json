@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Welcome-02-web-version.jpg",
+      "filename" : "*.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Welcome-02-web-version-1.jpg",
+      "filename" : "*-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Welcome-02-web-version-2.jpg",
+      "filename" : "*-2.png",
       "scale" : "3x"
     }
   ],
