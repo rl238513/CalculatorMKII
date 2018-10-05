@@ -12,16 +12,36 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        
+        
+        
+        
+        
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-   
-    }
-
+    
+    
+    
+    
     @IBAction func divisionButton(_ sender: Any) {
     }
+    
+    @IBAction func multiplacationButton(_ sender: Any) {
+    }
+    
+    @IBAction func subtractionButton(_ sender: Any) {
+    }
+    
+    @IBAction func additionButton(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
+    
     
 }
 
