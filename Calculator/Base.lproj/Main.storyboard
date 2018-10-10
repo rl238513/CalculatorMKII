@@ -73,7 +73,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-F8-j3O">
-                                <rect key="frame" x="305" y="112" width="81" height="26"/>
+                                <rect key="frame" x="49" y="201" width="207" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -83,6 +83,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNumber" destination="iHz-8I-TPA" id="CoQ-8p-7j6"/>
+                        <outlet property="pictures" destination="rdP-mU-64y" id="M5w-bE-jjk"/>
+                        <outlet property="resultLabel" destination="uqQ-F8-j3O" id="Egf-XN-bvE"/>
+                        <outlet property="secondNumber" destination="Jzd-vY-OnD" id="dth-K2-J6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
