@@ -34,34 +34,68 @@ class ViewController: UIViewController {
         if sum % 2 == 0 {
             pictures.image = UIImage(named: "pokeball")
         }
-
-
-//
-//        resultLabel.text = "\(equalTo)"
-//
-//        if equalTo == true {
-//            self.pictures.image = UIImage(named: "pokeball")
-//            self.pictures.layer.cornerRadius = self.pictures.frame.width / 2
-//            self.pictures.layer.masksToBounds = true
-//        }
-//        if equalTo == false {
-//            self.pictures.image = UIImage(named: "Mickey_Mouse")
-//            self.pictures.layer.cornerRadius = self.pictures.frame.width / 2
-//            self.pictures.layer.masksToBounds = true
-//        }
-//
-    }
+        else {
+            pictures.image = UIImage(named: "Mickey_Mouse")
+        }
+}
+    
+    
     
     @IBAction func divisionButton(_ sender: Any) {
+        firstNumber.resignFirstResponder()
+        secondNumber.resignFirstResponder()
+        
+        let number1 = Int(firstNumber.text!)
+        let number2 = Int(secondNumber.text!)
+        var sum = number1! / number2!
+        resultLabel.text = String(sum)
+        
+        if sum % 2 == 0 {
+            pictures.image = UIImage(named: "pokeball")
+        }
+        else {
+            pictures.image = UIImage(named: "Mickey_Mouse")
+        }
     }
+    
+    
     
     @IBAction func multiplacationButton(_ sender: Any) {
+        firstNumber.resignFirstResponder()
+        secondNumber.resignFirstResponder()
+        
+        let number1 = Int(firstNumber.text!)
+        let number2 = Int(secondNumber.text!)
+        var sum = number1! * number2!
+        resultLabel.text = String(sum)
+        
+        if sum % 2 == 0 {
+            pictures.image = UIImage(named: "pokeball")
+        }
+        else {
+            pictures.image = UIImage(named: "Mickey_Mouse")
+        }
     }
+    
+    
     
     @IBAction func subtractionButton(_ sender: Any) {
+        firstNumber.resignFirstResponder()
+        secondNumber.resignFirstResponder()
+        
+        let number1 = Int(firstNumber.text!)
+        let number2 = Int(secondNumber.text!)
+        var sum = number1! - number2!
+        resultLabel.text = String(sum)
+        
+        if sum % 2 == 0 {
+            pictures.image = UIImage(named: "pokeball")
+        }
+        else {
+            pictures.image = UIImage(named: "Mickey_Mouse")
+        }
+        
     }
-    
-  
     
 }
 
