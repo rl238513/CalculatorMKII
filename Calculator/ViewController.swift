@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
         }
+    
 }
     
     
@@ -74,6 +75,9 @@ class ViewController: UIViewController {
         }
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
+        }
+        if sum == 64{
+          pictures.image = UIImage(named: "Welcome-02-web-version")
         }
     }
     
