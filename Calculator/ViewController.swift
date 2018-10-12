@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pictures.autoresizingMask = UIViewAutoresizing(rawValue: UIViewAutoresizing.RawValue(UInt8(UIViewAutoresizing.flexibleBottomMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleHeight.rawValue) | UInt8(UIViewAutoresizing.flexibleRightMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleLeftMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleTopMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleWidth.rawValue)))
+        pictures.contentMode = UIViewContentMode.scaleAspectFill
     }
     
     
@@ -28,7 +30,7 @@ class ViewController: UIViewController {
         
         let number1 = Int(firstNumber.text!)
         let number2 = Int(secondNumber.text!)
-        var sum = number1! + number2!
+        let sum = number1! + number2!
         resultLabel.text = String(sum)
         
         if sum % 2 == 0 {
@@ -37,7 +39,9 @@ class ViewController: UIViewController {
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
         }
-    
+        if sum == 64{
+            pictures.image = UIImage(named: "Image")
+        }
 }
     
     
@@ -48,7 +52,7 @@ class ViewController: UIViewController {
         
         let number1 = Int(firstNumber.text!)
         let number2 = Int(secondNumber.text!)
-        var sum = number1! / number2!
+        let sum = number1! / number2!
         resultLabel.text = String(sum)
         
         if sum % 2 == 0 {
@@ -56,6 +60,9 @@ class ViewController: UIViewController {
         }
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
+        }
+        if sum == 64{
+            pictures.image = UIImage(named: "Image")
         }
     }
     
@@ -67,7 +74,7 @@ class ViewController: UIViewController {
         
         let number1 = Int(firstNumber.text!)
         let number2 = Int(secondNumber.text!)
-        var sum = number1! * number2!
+        let sum = number1! * number2!
         resultLabel.text = String(sum)
         
         if sum % 2 == 0 {
@@ -77,7 +84,7 @@ class ViewController: UIViewController {
             pictures.image = UIImage(named: "Mickey_Mouse")
         }
         if sum == 64{
-          pictures.image = UIImage(named: "Welcome-02-web-version")
+          pictures.image = UIImage(named: "Image")
         }
     }
     
@@ -87,18 +94,20 @@ class ViewController: UIViewController {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
         
-        let number1 = Int(firstNumber.text!)
-        let number2 = Int(secondNumber.text!)
-        var sum = number1! - number2!
+        let number1 = Double(firstNumber.text!)
+        let number2 = Double(secondNumber.text!)
+        let sum = number1! - number2!
         resultLabel.text = String(sum)
         
-        if sum % 2 == 0 {
+        if sum % 2.0 == 0.0 {
             pictures.image = UIImage(named: "pokeball")
         }
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
         }
-        
+        if sum == 64{
+            pictures.image = UIImage(named: "Image")
+        }
     }
     
 }
