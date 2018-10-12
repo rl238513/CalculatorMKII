@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         let sum = number1! - number2!
         resultLabel.text = String(sum)
         
-        if sum % 2.0 == 0.0 {
+        if sum / 2.0 == 0.0 {
             pictures.image = UIImage(named: "pokeball")
         }
         else {
