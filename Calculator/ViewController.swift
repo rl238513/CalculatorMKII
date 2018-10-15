@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondNumber: UITextField!
     @IBOutlet weak var firstNumber: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         pictures.autoresizingMask = UIViewAutoresizing(rawValue: UIViewAutoresizing.RawValue(UInt8(UIViewAutoresizing.flexibleBottomMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleHeight.rawValue) | UInt8(UIViewAutoresizing.flexibleRightMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleLeftMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleTopMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleWidth.rawValue)))
@@ -93,13 +92,18 @@ class ViewController: UIViewController {
     @IBAction func subtractionButton(_ sender: Any) {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
+       
+        let number1 = Int(firstNumber.text!)
+        let number2 = Int(secondNumber.text!)
         
-        let number1 = Double(firstNumber.text!)
-        let number2 = Double(secondNumber.text!)
+       // let number3 = Double(thirdNumber.text!)
+        //let number4 = Double(fouthNumber.text!)
+        
         let sum = number1! - number2!
+        //let answer = number3! - number4!
         resultLabel.text = String(sum)
         
-        if sum / 2.0 == 0.0 {
+        if sum % 2 == 0 {
             pictures.image = UIImage(named: "pokeball")
         }
         else {
