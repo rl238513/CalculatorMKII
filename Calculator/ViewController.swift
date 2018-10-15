@@ -29,11 +29,15 @@ class ViewController: UIViewController {
         
         let number1 = Int(firstNumber.text!)
         let number2 = Int(secondNumber.text!)
+        let number3 = Double(number1!)
+        let number4 = Double(number2!)
+        
         let sum = number1! + number2!
-        resultLabel.text = String(sum)
+        let answer = number3 + number4
+        resultLabel.text = String(answer)
         
         if sum % 2 == 0 {
-            pictures.image = UIImage(named: "pokeball")
+            pictures.image = UIImage(named: "funny")
         }
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
@@ -51,11 +55,15 @@ class ViewController: UIViewController {
         
         let number1 = Int(firstNumber.text!)
         let number2 = Int(secondNumber.text!)
+        let number3 = Double(number1!)
+        let number4 = Double(number2!)
+        
         let sum = number1! / number2!
-        resultLabel.text = String(sum)
+        let answer = number3 / number4
+        resultLabel.text = String(answer)
         
         if sum % 2 == 0 {
-            pictures.image = UIImage(named: "pokeball")
+            pictures.image = UIImage(named: "funny")
         }
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
@@ -73,11 +81,15 @@ class ViewController: UIViewController {
         
         let number1 = Int(firstNumber.text!)
         let number2 = Int(secondNumber.text!)
+        let number3 = Double(number1!)
+        let number4 = Double(number2!)
+        
         let sum = number1! * number2!
-        resultLabel.text = String(sum)
+        let answer = number3 * number4
+        resultLabel.text = String(answer)
         
         if sum % 2 == 0 {
-            pictures.image = UIImage(named: "pokeball")
+            pictures.image = UIImage(named: "funny")
         }
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
@@ -95,16 +107,15 @@ class ViewController: UIViewController {
        
         let number1 = Int(firstNumber.text!)
         let number2 = Int(secondNumber.text!)
-        
-       // let number3 = Double(thirdNumber.text!)
-        //let number4 = Double(fouthNumber.text!)
+        let number3 = Double(number1!)
+        let number4 = Double(number2!)
         
         let sum = number1! - number2!
-        //let answer = number3! - number4!
-        resultLabel.text = String(sum)
+        let answer = number3 - number4
+        resultLabel.text = String(answer)
         
         if sum % 2 == 0 {
-            pictures.image = UIImage(named: "pokeball")
+            pictures.image = UIImage(named: "funny")
         }
         else {
             pictures.image = UIImage(named: "Mickey_Mouse")
