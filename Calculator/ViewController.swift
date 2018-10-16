@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var secondNumber: UITextField!
     @IBOutlet weak var firstNumber: UITextField!
+    @IBOutlet weak var gif: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,23 +27,26 @@ class ViewController: UIViewController {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
         
-        let number1 = Int(firstNumber.text!)
-        let number2 = Int(secondNumber.text!)
-        let number3 = Double(number1!)
-        let number4 = Double(number2!)
-        let sum = number1! + number2!
-        let answer = number3 + number4
-        resultLabel.text = String(answer)
-         if sum % 2 == 0 {
-            pictures.image = UIImage(named: "funny")
+        if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
+            let sum = number1 + number2
+            resultLabel.text = String(sum)
+            
+            if sum.truncatingRemainder(dividingBy: 2) == 0 {
+                pictures.image = UIImage(named: "funny")
+            }
+            else {
+                pictures.image = UIImage(named: "funnyer")
+            }
+            if sum == 64{
+                pictures.image = UIImage(named: "Image")
+            }
         }
         else {
-            pictures.image = UIImage(named: "funnyer")
+            let alert = UIAlertController(title: "empty textfield", message: "blank text field", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
-          if sum == 64{
-            pictures.image = UIImage(named: "Image")
-        }
-}
+    }
     
     
     
@@ -50,23 +54,24 @@ class ViewController: UIViewController {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
         
-        let number1 = Int(firstNumber.text!)
-        let number2 = Int(secondNumber.text!)
-        let number3 = Double(number1!)
-        let number4 = Double(number2!)
-        
-        let sum = number1! % number2!
-        let answer = number3 / number4
-        resultLabel.text = String(answer)
-        
-         if sum % 2 == 0 {
-            pictures.image = UIImage(named: "funny")
+        if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
+            let sum = number1 / number2
+            resultLabel.text = String(sum)
+            
+            if sum.truncatingRemainder(dividingBy: 2) == 0 {
+                pictures.image = UIImage(named: "funny")
+            }
+            else {
+                pictures.image = UIImage(named: "funnyer")
+            }
+            if sum == 64{
+                pictures.image = UIImage(named: "Image")
+            }
         }
         else {
-            pictures.image = UIImage(named: "funnyer")
-        }
-          if sum == 64{
-            pictures.image = UIImage(named: "Image")
+            let alert = UIAlertController(title: "empty textfield", message: "blank text field", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -76,23 +81,24 @@ class ViewController: UIViewController {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
         
-        let number1 = Int(firstNumber.text!)
-        let number2 = Int(secondNumber.text!)
-        let number3 = Double(number1!)
-        let number4 = Double(number2!)
-        
-        let sum = number1! * number2!
-        let answer = number3 * number4
-        resultLabel.text = String(answer)
-        
-         if sum % 2 == 0 {
-            pictures.image = UIImage(named: "funny")
+        if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
+            let sum = number1 * number2
+            resultLabel.text = String(sum)
+            
+            if sum.truncatingRemainder(dividingBy: 2) == 0 {
+                pictures.image = UIImage(named: "funny")
+            }
+            else {
+                pictures.image = UIImage(named: "funnyer")
+            }
+            if sum == 64{
+                pictures.image = UIImage(named: "Image")
+            }
         }
         else {
-            pictures.image = UIImage(named: "funnyer")
-        }
-          if sum == 64{
-            pictures.image = UIImage(named: "Image")
+            let alert = UIAlertController(title: "empty textfield", message: "blank text field", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -101,26 +107,26 @@ class ViewController: UIViewController {
     @IBAction func subtractionButton(_ sender: Any) {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
-       
-        let number1 = Int(firstNumber.text!)
-        let number2 = Int(secondNumber.text!)
-        let number3 = Double(number1!)
-        let number4 = Double(number2!)
         
-        let sum = number1! - number2!
-        let answer = number3 - number4
-        resultLabel.text = String(answer)
-        
-        if sum % 2 == 0 {
-            pictures.image = UIImage(named: "funny")
+        if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
+            let sum = number1 - number2
+            resultLabel.text = String(sum)
+            
+            if sum.truncatingRemainder(dividingBy: 2) == 0 {
+                pictures.image = UIImage(named: "funny")
+            }
+            else {
+                pictures.image = UIImage(named: "funnyer")
+            }
+            if sum == 64{
+                pictures.image = UIImage(named: "Image")
+            }
         }
         else {
-            pictures.image = UIImage(named: "funnyer")
+            let alert = UIAlertController(title: "empty textfield", message: "blank text field", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
-          if sum == 64{
-            pictures.image = UIImage(named: "Image")
-        }
-    }
 }
 
 

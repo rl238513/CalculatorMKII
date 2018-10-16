@@ -79,12 +79,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image1" highlightedImage="pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="P7Q-PC-S39">
+                                <rect key="frame" x="87" y="588" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="firstNumber" destination="iHz-8I-TPA" id="CoQ-8p-7j6"/>
+                        <outlet property="gif" destination="P7Q-PC-S39" id="eX6-wb-fa3"/>
                         <outlet property="pictures" destination="rdP-mU-64y" id="M5w-bE-jjk"/>
                         <outlet property="resultLabel" destination="uqQ-F8-j3O" id="Egf-XN-bvE"/>
                         <outlet property="secondNumber" destination="Jzd-vY-OnD" id="dth-K2-J6c"/>
@@ -99,7 +104,9 @@
         <image name="*" width="75" height="75"/>
         <image name="+" width="426" height="240"/>
         <image name="-" width="100" height="56"/>
+        <image name="Image1" width="33" height="33"/>
         <image name="Welcome-02-web-version" width="275" height="106"/>
         <image name="\" width="533" height="533"/>
+        <image name="pokeball" width="87" height="63"/>
     </resources>
 </document>
