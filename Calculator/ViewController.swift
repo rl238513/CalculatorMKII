@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         pictures.contentMode = UIViewContentMode.scaleAspectFill
     }
     
-    
     @IBAction func additionButton(_ sender: UIButton)
     {
         firstNumber.resignFirstResponder()
@@ -31,18 +30,16 @@ class ViewController: UIViewController {
         let number2 = Int(secondNumber.text!)
         let number3 = Double(number1!)
         let number4 = Double(number2!)
-        
         let sum = number1! + number2!
         let answer = number3 + number4
         resultLabel.text = String(answer)
-        
-        if sum % 2 == 0 {
+         if sum % 2 == 0 {
             pictures.image = UIImage(named: "funny")
         }
         else {
-            pictures.image = UIImage(named: "Mickey_Mouse")
+            pictures.image = UIImage(named: "funnyer")
         }
-        if sum == 64{
+          if sum == 64{
             pictures.image = UIImage(named: "Image")
         }
 }
@@ -58,17 +55,17 @@ class ViewController: UIViewController {
         let number3 = Double(number1!)
         let number4 = Double(number2!)
         
-        let sum = number1! / number2!
+        let sum = number1! % number2!
         let answer = number3 / number4
         resultLabel.text = String(answer)
         
-        if sum % 2 == 0 {
+         if sum % 2 == 0 {
             pictures.image = UIImage(named: "funny")
         }
         else {
-            pictures.image = UIImage(named: "Mickey_Mouse")
+            pictures.image = UIImage(named: "funnyer")
         }
-        if sum == 64{
+          if sum == 64{
             pictures.image = UIImage(named: "Image")
         }
     }
@@ -88,14 +85,14 @@ class ViewController: UIViewController {
         let answer = number3 * number4
         resultLabel.text = String(answer)
         
-        if sum % 2 == 0 {
+         if sum % 2 == 0 {
             pictures.image = UIImage(named: "funny")
         }
         else {
-            pictures.image = UIImage(named: "Mickey_Mouse")
+            pictures.image = UIImage(named: "funnyer")
         }
-        if sum == 64{
-          pictures.image = UIImage(named: "Image")
+          if sum == 64{
+            pictures.image = UIImage(named: "Image")
         }
     }
     
@@ -118,13 +115,12 @@ class ViewController: UIViewController {
             pictures.image = UIImage(named: "funny")
         }
         else {
-            pictures.image = UIImage(named: "Mickey_Mouse")
+            pictures.image = UIImage(named: "funnyer")
         }
-        if sum == 64{
+          if sum == 64{
             pictures.image = UIImage(named: "Image")
         }
     }
-    
 }
 
 
