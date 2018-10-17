@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         pictures.autoresizingMask = UIViewAutoresizing(rawValue: UIViewAutoresizing.RawValue(UInt8(UIViewAutoresizing.flexibleBottomMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleHeight.rawValue) | UInt8(UIViewAutoresizing.flexibleRightMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleLeftMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleTopMargin.rawValue) | UInt8(UIViewAutoresizing.flexibleWidth.rawValue)))
         pictures.contentMode = UIViewContentMode.scaleAspectFill
         
-        creator.text = favoriteClassName
+        creator.text = myName
         
         
     }
@@ -135,5 +135,5 @@ class ViewController: UIViewController {
         }
 }
 
-
 }
+

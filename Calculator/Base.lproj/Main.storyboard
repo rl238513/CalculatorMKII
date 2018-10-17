@@ -84,7 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMa-Oa-r9p">
-                                <rect key="frame" x="208" y="640" width="132" height="53"/>
+                                <rect key="frame" x="208" y="640" width="186" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -97,7 +97,6 @@
                     <connections>
                         <outlet property="creator" destination="vMa-Oa-r9p" id="d1o-9g-hbC"/>
                         <outlet property="firstNumber" destination="iHz-8I-TPA" id="CoQ-8p-7j6"/>
-                        <outlet property="gif" destination="P7Q-PC-S39" id="eX6-wb-fa3"/>
                         <outlet property="pictures" destination="rdP-mU-64y" id="M5w-bE-jjk"/>
                         <outlet property="resultLabel" destination="uqQ-F8-j3O" id="Egf-XN-bvE"/>
                         <outlet property="secondNumber" destination="Jzd-vY-OnD" id="dth-K2-J6c"/>
