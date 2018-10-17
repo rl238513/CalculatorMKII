@@ -80,14 +80,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image1" highlightedImage="pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="P7Q-PC-S39">
-                                <rect key="frame" x="87" y="588" width="240" height="128"/>
+                                <rect key="frame" x="87" y="616" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMa-Oa-r9p">
+                                <rect key="frame" x="208" y="640" width="132" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="creator" destination="vMa-Oa-r9p" id="d1o-9g-hbC"/>
                         <outlet property="firstNumber" destination="iHz-8I-TPA" id="CoQ-8p-7j6"/>
                         <outlet property="gif" destination="P7Q-PC-S39" id="eX6-wb-fa3"/>
                         <outlet property="pictures" destination="rdP-mU-64y" id="M5w-bE-jjk"/>
