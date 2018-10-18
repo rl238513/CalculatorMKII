@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var pictures: UIImageView!
-    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var secondNumber: UITextField!
     @IBOutlet weak var firstNumber: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var creator: UILabel!
     var myName:String = "Eduardo Mendoza"
     
@@ -24,7 +25,14 @@ class ViewController: UIViewController {
         
         creator.text = myName
         
-        
+        background.image = UIImage(named: "dhmis")
+        resultLabel.backgroundColor = .purple
+        firstNumber.backgroundColor = .black
+        secondNumber.backgroundColor = .blue
+        firstNumber.textColor = .yellow
+        secondNumber.textColor = .white
+        resultLabel.textColor = .red
+        self.view.backgroundColor = .green
     }
    
     @IBAction func additionButton(_ sender: UIButton)
@@ -133,6 +141,5 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
 }
-
 }
 
