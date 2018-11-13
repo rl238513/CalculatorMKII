@@ -25,7 +25,9 @@ class ViewController: UIViewController {
         
         creator.text = myName
         
-        background.image = UIImage(named: "dhmis")
+        background.image = UIImage(named: "dhmis-1")
+        self.background.layer.cornerRadius = self.background.frame.width / 2
+        background.backgroundColor = .red
         resultLabel.backgroundColor = .purple
         firstNumber.backgroundColor = .black
         secondNumber.backgroundColor = .blue
@@ -39,6 +41,9 @@ class ViewController: UIViewController {
     {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
+        
+        background.backgroundColor = .green
+        self.view.backgroundColor = .red
         
         if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
             let sum = number1 + number2
@@ -67,6 +72,9 @@ class ViewController: UIViewController {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
         
+        background.backgroundColor = .green
+        self.view.backgroundColor = .red
+        
         if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
             let sum = number1 / number2
             resultLabel.text = String(sum)
@@ -93,6 +101,9 @@ class ViewController: UIViewController {
     @IBAction func multiplacationButton(_ sender: Any) {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
+        
+        background.backgroundColor = .green
+        self.view.backgroundColor = .red
         
         if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
             let sum = number1 * number2
@@ -121,6 +132,9 @@ class ViewController: UIViewController {
         firstNumber.resignFirstResponder()
         secondNumber.resignFirstResponder()
         
+        background.backgroundColor = .green
+        self.view.backgroundColor = .red
+
         if let number1 = Double(firstNumber.text!), let number2 = Double(secondNumber.text!){
             let sum = number1 - number2
             resultLabel.text = String(sum)
